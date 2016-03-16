@@ -60,7 +60,6 @@ public class ArticleDetailActivity extends AppCompatActivity
             ActionBar actionBar = getSupportActionBar();
             actionBar.setDisplayShowTitleEnabled(true);
             actionBar.setTitle(getString(R.string.app_name));
-            actionBar.setSubtitle(getString(R.string.app_name));
             actionBar.setHomeButtonEnabled(true);
             actionBar.setDisplayHomeAsUpEnabled(true);
         }

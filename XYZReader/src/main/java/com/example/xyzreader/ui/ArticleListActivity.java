@@ -11,7 +11,6 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.v4.widget.SwipeRefreshLayout;
-import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.StaggeredGridLayoutManager;
@@ -55,20 +54,19 @@ public class ArticleListActivity extends AppCompatActivity implements
         setContentView(R.layout.activity_article_list);
 
         CollapsingToolbarLayout collapsingToolbarLayout = (CollapsingToolbarLayout) findViewById(R.id.collapsingToolbarLayout);
-        collapsingToolbarLayout.setTitle(getString(R.string.app_name));
-        collapsingToolbarLayout.setCollapsedTitleTextColor(Color.WHITE);
-        this.setTitle(getString(R.string.app_name));
+        collapsingToolbarLayout.setTitle("XYZReader");
+        collapsingToolbarLayout.setCollapsedTitleTextColor(Color.BLACK);
+        collapsingToolbarLayout.setExpandedTitleColor(Color.WHITE);
 
-        mToolbar = (Toolbar) findViewById(R.id.list_toolbar);
-        if (mToolbar != null) {
-            setSupportActionBar(mToolbar);
-            ActionBar actionBar = getSupportActionBar();
-            actionBar.setDisplayShowTitleEnabled(true);
-            actionBar.setTitle(getString(R.string.app_name));
-            actionBar.setSubtitle(getString(R.string.app_name));
-            actionBar.setHomeButtonEnabled(true);
-            actionBar.setDisplayHomeAsUpEnabled(true);
-        }
+//        mToolbar = (Toolbar) findViewById(R.id.list_toolbar);
+//        if (mToolbar != null) {
+//            setSupportActionBar(mToolbar);
+//            ActionBar actionBar = getSupportActionBar();
+//            actionBar.setDisplayShowTitleEnabled(true);
+//            actionBar.setTitle(getString(R.string.app_name));
+//            actionBar.setSubtitle(getString(R.string.app_name));
+//            actionBar.setHomeButtonEnabled(true);
+//        }
 
         final View toolbarContainerView = findViewById(R.id.toolbar_container);
 
